@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BlazorMauiApp.Components.Pages.NewPage1"
+             Title="NewPage1"
+             BackgroundColor="White">
+    <!-- Set background color to ensure contrast -->
+
+    <Grid VerticalOptions="FillAndExpand">
+        <!-- Ensure the grid fills the page -->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <!-- Takes up remaining space -->
+            <RowDefinition Height="Auto" />
+            <!-- Takes up only needed space -->
+        </Grid.RowDefinitions>
+
+        <Label 
+            Text="Welcome to .NET MAUI!"
+            TextColor="Black"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"
+            Grid.Row="0" />
+
+        <!-- Red button that is small at the bottom of the screen -->
+        <Button
+            Text="Click me!"
+            BackgroundColor="Red"
+            WidthRequest="100"
+            HeightRequest="50"
+            CornerRadius="30"
+            VerticalOptions="End"
+            HorizontalOptions="Center"
+            Grid.Row="1" />
+    </Grid>
+</ContentPage>
